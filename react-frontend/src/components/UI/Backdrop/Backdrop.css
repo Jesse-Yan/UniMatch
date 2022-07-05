@@ -1,0 +1,52 @@
+.Backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-out;
+}
+
+.BackdropOpen {
+  animation: openBackdrop 0.5s ease forwards;
+}
+
+.BackdropClosed {
+  animation: closeBackdrop 0.5s ease forwards;
+}
+
+@keyframes openBackdrop {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeBackdrop {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-3%);
+  }
+  75% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

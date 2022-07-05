@@ -1,0 +1,79 @@
+.Auth {
+  width: auto;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  background-color: inherit;
+  transition: all 0.3s ease-out;
+}
+
+.AuthCard {
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  background-color: inherit;
+  transition: all 0.3s ease-out;
+}
+
+.AuthCardSignup {
+  background-color: white;
+}
+
+.CheckIcon {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AuthCard p {
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: fontColor 2s infinite;
+}
+
+.AuthCard form {
+  margin: 5vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.AuthCard input,
+.AuthCard button {
+  margin-top: 1rem;
+  padding: 1vh;
+}
+
+.Select {
+  margin-top: 1rem;
+}
+
+.Select input {
+  margin-top: 0;
+}
+
+@keyframes fontColor {
+  0% {
+    color: rgb(252, 64, 95);
+  }
+  20% {
+    color: rgb(255, 127, 52);
+  }
+  40% {
+    color: rgb(241, 140, 93);
+  }
+  60% {
+    color: rgb(218, 150, 73);
+  }
+  80% {
+    color: rgb(255, 106, 37);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}

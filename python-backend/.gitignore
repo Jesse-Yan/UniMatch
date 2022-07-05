@@ -1,0 +1,6 @@
+__pycache__
+.vscode
+venv
+data
+design
+user-data.db
